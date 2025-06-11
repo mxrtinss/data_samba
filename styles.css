@@ -646,8 +646,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    text-align: center;
 }
 
 .gallery-placeholder i {
@@ -656,15 +654,9 @@ body {
     margin-bottom: 1rem;
 }
 
-.gallery-placeholder h3 {
-    color: var(--dark-gray);
-    margin-bottom: 0.5rem;
-}
-
 .gallery-placeholder p {
     color: var(--medium-gray);
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-weight: 500;
 }
 
 /* Contact Section */
