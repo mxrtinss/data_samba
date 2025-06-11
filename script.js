@@ -66,6 +66,28 @@ function addMessage(text, type) {
     chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
+function addMessage(text, type) {
+    const chatMessages = document.getElementById('chatMessages');
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `chat-message ${type}`;
+    messageDiv.innerHTML = `<p>${text}</p>`;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+// Aqui abaixo:
+function clearChat() {
+    document.getElementById('chatMessages').innerHTML = '';
+    localStorage.removeItem('chatMessages');
+}
+
+
+// Adicionar após criação da mensagem:
+setTimeout(() => {
+    messageDiv.classList.add('show');
+}, 10);
+
+
 // Função do WhatsApp
 function openWhatsApp() {
     const phone = '5541985163600'; // Número do WhatsApp

@@ -1208,3 +1208,17 @@ html {
   .carousel-btn.prev { left: 0; }
   .carousel-btn.next { right: 0; }
 }
+
+.chat-message {
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.chat-message p {
+    margin: 0;
+}
+
+.chat-message.show {
+    opacity: 1;
+}
+
